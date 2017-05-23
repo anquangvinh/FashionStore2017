@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions [
+<!ELEMENT tiles-definitions (definition+)>
+<!ELEMENT definition (put-attribute*, put-list-attribute*)>
+<!ATTLIST definition       id               ID               #IMPLIED>
+<!ATTLIST definition       preparer         CDATA            #IMPLIED>
+<!ATTLIST definition       extends          CDATA            #IMPLIED>
+<!ATTLIST definition       name             CDATA            #IMPLIED>
+<!ATTLIST definition       role             CDATA            #IMPLIED>
+<!ATTLIST definition       template         CDATA            #IMPLIED>
+<!ATTLIST definition       templateExpression       CDATA    #IMPLIED>
+<!ATTLIST definition       templateType             CDATA   #IMPLIED>
+<!ELEMENT put-attribute ( (definition*) )>
+<!ATTLIST put-attribute     id               ID              #IMPLIED>
+<!ATTLIST put-attribute     name             CDATA           #REQUIRED>
+<!ATTLIST put-attribute     type             CDATA           #IMPLIED>
+<!ATTLIST put-attribute     value            CDATA           #IMPLIED>
+<!ATTLIST put-attribute     expression       CDATA           #IMPLIED>
+<!ATTLIST put-attribute     role             CDATA            #IMPLIED>
+<!ATTLIST put-attribute     cascade          (true|false)    #IMPLIED>
+<!ELEMENT put-list-attribute ( (add-attribute* | add-list-attribute*)+) >
+<!ATTLIST put-list-attribute id               ID              #IMPLIED>
+<!ATTLIST put-list-attribute name             CDATA           #REQUIRED>
+<!ATTLIST put-list-attribute role             CDATA           #IMPLIED>
+<!ATTLIST put-list-attribute inherit          (true|false)    #IMPLIED>
+<!ATTLIST put-list-attribute cascade          (true|false)    #IMPLIED>
+<!ELEMENT add-attribute ( (definition*) )>
+<!ATTLIST add-attribute              id               ID              #IMPLIED>
+<!ATTLIST add-attribute              type             CDATA           #IMPLIED>
+<!ATTLIST add-attribute              value            CDATA           #IMPLIED>
+<!ATTLIST add-attribute              expression       CDATA           #IMPLIED>
+<!ATTLIST add-attribute              role             CDATA            #IMPLIED>
+<!ELEMENT add-list-attribute ( (add-attribute* | add-list-attribute*)+) >
+<!ATTLIST add-list-attribute id               ID              #IMPLIED>
+<!ATTLIST add-list-attribute role             CDATA            #IMPLIED>
+]>
+<tiles-definitions>
+    
+    <definition name="client/pages/*" template="/WEB-INF/views/client/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/client/blocks/header.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/client/pages/{1}.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/client/blocks/footer.jsp" />
+    </definition>
+    
+    <definition name="admin/pages/*" template="/WEB-INF/views/admin/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/admin/blocks/header-menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/admin/pages/{1}.jsp" />
+    </definition>
+    
+    <definition name="admin/login" template="/WEB-INF/views/admin/login.jsp"/>
+    <definition name="admin/orders-invoice" template="/WEB-INF/views/admin/orders-invoice.jsp"/>
+</tiles-definitions>

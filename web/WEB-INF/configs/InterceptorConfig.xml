@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <mvc:interceptors>
+        <!--Cái này chạy thứ 1-->
+        <mvc:interceptor> 
+            <mvc:mapping path="/admin/**" />
+            <mvc:mapping path="/admin**" />
+            <mvc:exclude-mapping path="/admin/login**" />
+            <bean class="spring.interceptor.LoginInterceptor" /> 
+        </mvc:interceptor>
+<!--        
+        <mvc:interceptor>
+            <mvc:mapping path="/**" />
+            <mvc:exclude-mapping path="/admin/**"/>
+            <bean class="spring.interceptor.CountVisitorInterceptor" /> 
+        </mvc:interceptor>-->
+        
+        <!--Cái này chạy thứ 2-->
+        <!--Cau hinh interceptor moi loc cookie nam o day-->
+        <mvc:interceptor>
+            <mvc:mapping path="/**" />
+            <mvc:exclude-mapping path="/admin/**"/> <!-- Tí test thử admin coi có lỗi ko -->
+            <bean class="spring.interceptor.CheckCookieUser" /> 
+        </mvc:interceptor>
+        
+        <!--Cái này chạy thứ 3-->
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**" />
+            <mvc:exclude-mapping path="/user/login**" />
+            <mvc:exclude-mapping path="/user/register**" />
+            <bean class="spring.interceptor.LoginUserInterceptor" />
+        </mvc:interceptor>
+          
+    </mvc:interceptors>
+   
+</beans>

@@ -1,0 +1,224 @@
+.fs-valign-middle {
+    vertical-align: middle !important; 
+}
+
+#fs-form-product-create-new fieldset:not(:first-of-type) {
+    display: none;
+}
+/*progressbar*/
+#fs-product-add-progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#fs-product-add-progressbar li {
+    list-style-type: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 33.33%;
+    display: inline-block;
+    position: relative;
+    z-index: 1000;
+}
+#fs-product-add-progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 15px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+    z-index: 1000;
+}
+/*progressbar connectors*/
+#fs-product-add-progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: gray;
+    position: absolute;
+    left: -48%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#fs-product-add-progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#fs-product-add-progressbar li.active:before,  #fs-product-add-progressbar li.active:after{
+    background: #27AE60;
+    color: white;
+}
+
+/*
+   show information User-address, Wish List
+*/
+td.details-control{
+    background: url('../../../images/details_open.gif') no-repeat center center;
+    cursor: pointer;
+}
+
+/*
+    Close datatables User-address, Wish list
+*/
+
+tr.shown td.details-control{
+    background: url('../../../images/details_close.gif') no-repeat center center;
+}
+
+.fs-thumb-image {
+    width: 35%;
+}
+
+.fs-thumb-sub-image {
+    width: 21%;
+    margin-right: 10px;
+}
+
+.fs-thumb-color-image{
+    width: 30px;
+    height: 30px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) {
+    .fs-success-icon {
+        width: 35px; 
+        position: absolute; 
+        top: 22px; 
+        left: 37%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .fs-success-icon {
+        width: 35px; 
+        position: absolute; 
+        top: 15px; 
+        left: 37%;
+    }
+
+    .fs-right-border {
+        border-right: 1px solid #ccc;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .fs-right-border {
+        border-right: 1px solid #ccc;
+    }
+}
+
+.circ{
+    width: 100px;
+    opacity: 0;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.tick{
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    -webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -o-transition: stroke-dashoffset 1s 0.5s ease-out;
+    transition: stroke-dashoffset 1s 0.5s ease-out;
+}
+.drawn + div svg .path{
+    opacity: 1;
+    stroke-dashoffset: 0;
+}
+
+.fs-stopworking-icon {
+    color: red; 
+    font-size: 20px; 
+    position: absolute; 
+    top: -14px; 
+    right: -7px;
+}
+
+.fs-stopworking-icon-product-color-update {
+    color: red; 
+    font-size: 20px; 
+    position: absolute; 
+    top: -5px; 
+    right: 1px;
+}
+
+.fs-display-none {
+    display: none;
+}
+
+.fs-color-red {
+    color: red;
+    font-size: 15px;
+}
+
+#productList_dataTable_filter {
+    text-align: center !important;
+}
+
+#fs-product-update-page .fileuploader, #fs-product-add-page .fileuploader{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* Blog */
+#loading{position:fixed; top:20px; left:20px; background:grey; color:white; display:none;}
+
+#loading h1{text-align:center;}
+
+.fs-highlighter {
+    background-color: rgba(255, 255, 98, 0.3) !important;
+}
+
+/* WAITING AJAX */
+#fs-ajax-loading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, 0.8 ) 
+        url('../../../images/ajax-loader.gif') 
+        50% 50% 
+        no-repeat;
+}
+.fs-widget {
+    background-color: #fbfbfb;
+    -webkit-box-shadow: 1px 0 10px 1px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 1px 0 10px 1px rgba(0, 0, 0, .3);
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, .3);
+    padding: 12px
+}
+
+.fs-panel-flot-pie-chart-returning-visitor {
+    font-size: 17px; 
+    min-height: 50px; 
+    border: none;
+    background-color: #fbfbfb;
+}
+
+#fs-pie-chart-returning-visitor {
+    width: 431px; 
+    height: 300px;
+    margin:auto;
+}
+

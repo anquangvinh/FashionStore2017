@@ -1,0 +1,441 @@
+/* CSS FOR REGISTER FORM */
+.fs-login-gender {
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 42px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.fs-login-file-input {
+    border: none !important;
+    line-height: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* CSS FOR PRODUCT: COLOR IMG, SIZE.... */
+.item-colors img {
+    display: inline-block !important;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    box-shadow: 0 4px 8px 0 rgb(193, 188, 188), 0 6px 20px 0 rgb(193, 188, 188);
+    cursor:pointer;
+}
+
+.fs-product-color img, .fs-product-modal-color img {
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+}
+
+.item-colors img:hover{
+    box-shadow: 0 0 8px rgba(20, 10, 0, 1);
+}
+
+.fs-product-color-border, .fs-product-modal-color-border {
+    border: 2px solid #ccc;
+    padding: 2px;
+    float: left;
+    margin-right: 10px;
+}
+
+.fs-product-color-border:hover, .fs-product-modal-color-border:hover {
+    border-color: #000; 
+}
+
+.fs-clear-fix {
+    clear:both;
+}
+
+.fs-product-selected {
+    border-color: #000 !important; 
+}
+
+.fs-product-size {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.fs-particular-size {
+    min-width: 35px;
+    height: 35px;
+    border: 2px solid #ccc;
+    padding: 2px;
+    float: left;
+    margin-right: 13px;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 28px !important;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: #d6644a;
+}
+
+.fs-unselectable {
+    background: #e6e6e6;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+a.fs-product-modal-link-to-detail:hover {
+    background: #d6644a;
+}
+
+a.fs-product-modal-link-to-detail{
+    height: 33px;
+    border: none;
+    line-height: 33px;
+    background: #333;
+    padding: 0 20px;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 11px;
+    border-radius: 3px;
+    color: #fff !important;
+    text-transform: uppercase;
+    margin: 8px 0 0;
+}
+
+.select-wraps p {
+    margin: 0 !important;
+}
+
+.fs-modal-btn-addtobag:link, .fs-modal-btn-addtobag:visited, .fs-modal-btn-addtobag:hover, .fs-modal-btn-addtobag:active{
+    color: #fff !important;
+}
+
+.addtobag:link, .addtobag:visited, .addtobag:hover, .addtobag:active  {
+    color: #fff !important;
+}
+
+.fs-modal-btn-addtobag:hover {
+    background: #333;
+}
+
+.fs-modal-btn-addtobag {
+    height: 33px;
+    border: none;
+    line-height: 33px;
+    background: #d6644a;
+    padding: 0 20px;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 11px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 8px 0 0;
+}
+
+.modal-ku {
+    width: 900px !important;
+    margin: auto;
+}
+
+.overlay-rmore {
+    line-height: 54px !important;
+}
+
+/*CSS FOR USER-LOGIN-MODAL:*/ 
+.fs-login-page:link, .fs-login-page:visited, .fs-login-page:hover, .fs-login-page:active {
+    color: #cccccc !important;
+}
+
+.fs-login-page{
+    text-decoration: none;
+    color: #cccccc;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.btn-custom,.btn-custom: hover, .btn-custom: active, .btn-custom: focus {
+    background-color: #ff8627;
+    color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: background-color 300ms linear 0s;
+    display: block;
+    width: 100%;
+}
+
+
+.login-tab {
+    margin: 0 auto;
+    max-width: 380px;
+}
+
+.login-modal-header {
+    background: #27ae60;
+    color: #fff;
+}
+
+.login-modal-header .modal-title {
+    color: #fff;
+}
+
+.login-modal-header .close {
+    color: #fff;
+}
+
+
+.login-modal .fs-login-modal {
+    max-width: 340px;
+}
+
+.tab-pane .fs-login-modal {
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 0.9375rem;
+}
+
+/*CHỈNH VỊ TRÍ CỐ ĐỊNH CHO BIRTHDAY*/
+
+/* FORM CHANGE PASS*/
+.border--primary{
+    border-color:#003b6f;
+}
+
+/*FORM ADDRESS-LIST*/
+
+#fs-header{
+
+    margin: 0;
+    max-width: 100%;
+    padding: 5px;
+    text-align: center;
+    overflow: auto;
+
+
+}
+div.fs-lv-bg{
+    background: Lavender;
+    color: #262626;
+    height: 80px;
+}
+
+h1.fs-site-title{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.clickable{
+    cursor: pointer;   
+}
+
+.panel-heading span {
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.fs-inner {
+    padding: 30px;
+}
+
+.fs-page-number {
+    cursor: pointer;
+}
+
+.fs-page-number-active {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d6644a !important;
+    cursor: default;
+}
+
+/* PRODUCT CATEGORY */
+/* WAITING AJAX */
+#fs-ajax-loading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, 0.8 ) 
+        url('../images/loading.gif') 
+        50% 50% 
+        no-repeat;
+}
+
+.fs-ul-color, .fs-ul-size {
+    column-count:2;
+    -moz-column-count:2;
+    -webkit-column-count:2;
+}
+
+input.fs-color-checkbox, input.fs-size-checkbox { display:none; }
+
+input.fs-color-checkbox + label:before, input.fs-size-checkbox + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 18px;
+}
+
+input.fs-color-checkbox + label:before, input.fs-size-checkbox + label:before { content: "\f096"; }
+input.fs-color-checkbox + label:before, input.fs-size-checkbox + label:before { letter-spacing: 8px; }
+
+input.fs-color-checkbox:checked + label:before, input.fs-size-checkbox:checked + label:before { content: "\f046"; }
+input.fs-color-checkbox:checked + label:before, input.fs-size-checkbox:checked + label:before { letter-spacing: 8px; }
+
+.fs-product-price-filter::-webkit-inner-spin-button, .fs-product-price-filter::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+.fs-sc-range {
+    position: relative;
+    top: 15px;
+}
+
+/* CSS FOR MESS-WISHLIST: */
+
+.fs-modal-wl-mess{
+    /*display:none;*/
+    padding: 20px ;
+    top:90px;
+    left: 200px;
+    right: 200px;
+    text-align: center;
+    /*background:rgba(20,10,10,0.75);*/
+}
+
+.fs-modal-wl-close{
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,100,0,10);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+
+.fs-modal-wl-close:hover{
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+.fs-wl-text{
+    font-size: 24px;
+    color: #72b572;
+}
+
+.fs-btn-login-wl{
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255,255,255,0);
+    outline: 1px solid;
+    outline-color: rgba(255,255,255,0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.fs-btn-login-wl:hover{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+.fs-btn-wl{
+    text-align: center;
+    color: #2795e9;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.fs-btn-wl:hover{
+    text-decoration: none;
+}
+
+.fs-heart-color {
+    background: #d6644a !important;
+}
+
+.fs-modal-mess-wl{
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    top:90px;
+    left: 200px;
+    right: 200px;
+    text-align: center;
+}
+
+/* PRODUCT DETAIL */
+.fs-display-none {
+    display: none;
+}
+
+#fs-btn-login-to-review {
+    background-color: #d6644a;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    border: none;
+}
+
+#fs-btn-login-to-review:hover {
+    background-color: black;
+
+}
+
+#fs-ajax-loading-2 {
+    display: none;
+    position:   absolute;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, 0.8 ) 
+        url('../images/ajax-loader.gif') 
+        50% 50% 
+        no-repeat;
+}
+
+.fw-info .br-theme-fontawesome-stars-o .br-widget a{
+    font: normal normal normal 20px/1 FontAwesome !important;
+}
+
+.fw-info div.br-widget {
+    margin-top: 8px;
+}
+
+.fs-search-result {
+    padding: 10px; 
+    border-bottom: 1px solid #ededed;
+}
+/* CSS FOR USER-LOGIN-MODAL: */
+
